@@ -21,7 +21,7 @@ class Auteur {
     /**
      * Get the value of nom
      */ 
-    public function getNom()
+    public function getNom():string
     {
         return $this->nom;
     }
@@ -40,7 +40,7 @@ class Auteur {
     /**
      * Get the value of prenom
      */ 
-    public function getPrenom()
+    public function getPrenom():string
     {
         return $this->prenom;
     }
@@ -59,7 +59,7 @@ class Auteur {
     /**
      * Get the value of sexe
      */ 
-    public function getSexe()
+    public function getSexe():string
     {
         return $this->sexe;
     }
@@ -78,7 +78,7 @@ class Auteur {
     /**
      * Get the value of dateNaissance
      */ 
-    public function getDateNaissance()
+    public function getDateNaissance():DateTime
     {
         return $this->dateNaissance;
     }
@@ -94,7 +94,8 @@ class Auteur {
         return $this;
     }
 
-    public function getAge() {
+    public function getAge():int
+    {
         return date_diff(new DateTime(), $this->dateNaissance)->format("%Y");
     }
 

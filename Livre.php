@@ -23,7 +23,7 @@ class Livre
     /**
      * Get the value of titre
      */ 
-    public function getTitre()
+    public function getTitre():string
     {
         return $this->titre;
     }
@@ -42,7 +42,7 @@ class Livre
     /**
      * Get the value of anneeSortie
      */ 
-    public function getAnneeSortie()
+    public function getAnneeSortie():int
     {
         return $this->anneeSortie;
     }
@@ -61,7 +61,7 @@ class Livre
     /**
      * Get the value of nbPages
      */ 
-    public function getNbPages()
+    public function getNbPages():int
     {
         return $this->nbPages;
     }
@@ -80,7 +80,7 @@ class Livre
     /**
      * Get the value of prix
      */ 
-    public function getPrix()
+    public function getPrix():float
     {
         return $this->prix;
     }
@@ -99,7 +99,7 @@ class Livre
     /**
      * Get the value of auteur
      */ 
-    public function getAuteur()
+    public function getAuteur():Auteur
     {
         return $this->auteur;
     }
